@@ -1,0 +1,259 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 98vh;
+}
+
+::selection {
+    background-color: #f8780f;
+    color: white;
+}
+
+.gradient-background {
+    background: radial-gradient(ellipse at top, #f8780f, transparent),
+    radial-gradient(ellipse at bottom, #ea1ba8, transparent);
+    background-size: 240% 240%;
+    animation: gradient-animation 24s ease infinite;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%
+    }
+}
+
+@keyframes rollSatsuma {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(9deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    90% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+h1 {
+    color:white;
+    text-shadow: #fa6a54 10px 10px;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+.glass {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.cardContent {
+    max-width: 600px;
+    min-width: 450px;
+}
+
+.content {
+    align-self: center;
+}
+
+.footer {
+    padding: 0px 10px 0px 10px;
+    width: 95%;
+    top: 100%;
+    margin-bottom: 10px;
+    position: sticky;
+}
+
+.header {
+    padding: 0px 10px 0px 10px;
+    width: fit-content;
+    top: 0%;
+    margin-bottom: 10px;
+    float: left;
+    align-self: center;
+    position: sticky;
+}
+
+.header a {
+    color: white;
+}
+
+.contentWrapper {
+    max-height: 100vh;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav li a {
+    color: rgb(255, 255, 255);
+    transition: all .3s ease-in-out;
+}
+
+.nav li a:hover {
+    color: rgb(251, 170, 94);
+    display: inline-block;
+    transform: skew(-0.03turn, 3deg) scale(1.05);
+}
+
+.satsuma{
+    animation: rollSatsuma infinite 2s alternate ease-in-out;
+}
+
+.socials {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px
+}
+
+.socials i:hover{
+    transform: skew(-0.03turn, 3deg) scale(1.05);
+    color: rgb(251, 170, 94);
+}
+
+#callToAction {
+    width: 60%;
+    height: 80px;
+    outline: 0;
+    border: 1;
+    border-color: #f8780fa7;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #ea831bb1, #f84d0fa4);
+    color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+    padding: 10px;
+    font-size: large;
+    transition: all .2s ease-in-out;
+}
+
+#callToAction:hover {
+    transform: skew(-0.01turn, 1deg) scale(1.05);
+}
+
+.glassBtn {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    border: 1px;
+    border-color: #f8780fa7;
+    background: linear-gradient(to bottom right, #ea831bb1, #f84d0fa4);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    transition: all .2s ease-in-out;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.glassBtn:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.circleGroup {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    gap: 10px;
+}
+
+.circleGroup div i {
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.circleGroup div i:hover {
+    transform: scale(1.5);
+}
+
+.circle {
+    background-color: rgba(255, 255, 255, 0.596);
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.circle:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+.circleCurrent {
+    background-color: #ffffff;
+}
+
+.contentHolder {
+    display: flex;
+    overflow-x: scroll;
+    gap: 100px;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.serviceBtn {
+    width: auto;
+    height: 60px;
+    outline: 0;
+    border: 1;
+    border-color: #f8780fa7;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #ea831bb1, #f84d0fa4);
+    color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+    padding: 10px;
+    font-size: large;
+    transition: all .2s ease-in-out;
+}
+    
+.serviceBtn:hover {
+    transform: skew(-0.01turn, 1deg) scale(1.05);
+}
