@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/e7e56e69bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <p>satsumascript🍊</p>
+        <p class="logo">satsumascript🍊</p>
         <ul>
             <li>about</li>
             <li>services</li>
@@ -16,7 +17,7 @@
             <li>contact</li>
         </ul>
     </header>
-    <h1>satsumascript🍊</h1>
+    <h1 class="logo">satsumascript🍊</h1>
     <p>
         Hi, we're satsumascript🍊, a digital design studio based in Ipswich. Founded in the early winter of 24, we're ripe and ready to deliver your digital design needs.
     </p>
@@ -31,29 +32,49 @@
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perspiciatis rerum eos quod quisquam nulla deleniti necessitatibus doloremque repudiandae neque, minima alias rem fugit ratione voluptates sunt laboriosam velit quam.
     </p>
-    <h3>Juice Tier 🧃</h3>
-    <ul>
-        <li>Website Design</li>
-        <li>Website Creation</li>
-        <li>2 Revisions</li>
-        <li>SEO</li>
-        <li>Up to 4 pages</li>
-    </ul>
-    <h3>& Bits Tier 🍊</h3>
-    <ul>
-        <li>Hosting</li>
-        <li>Up to 10 pages</li>
-        <li>Copy writing</li>
-        <li>Regular content<br>updates</li>
-    </ul>
-    <h3>The Pressed Tier 🥇</h3>
-    <ul>
-        <li>Email set-up</li>
-        <li>Email signatures</li>
-        <li>48 hour SLA</li>
-        <li>Annual Revisions</li>
-        <li>Unlimited pages</li>
-    </ul>
+    <div>
+        <div class="tierContainer">
+            <button class="select"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="select"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="tierGlass" id="juiceTier">
+                <h3>Juice Tier 🧃</h3>
+                <ul>
+                    <li>Website Design</li>
+                    <li>Website Creation</li>
+                    <li>2 Revisions</li>
+                    <li>SEO</li>
+                    <li>Up to 4 pages</li>
+                </ul>
+                <img src="" alt="Building website image">
+            </div>
+            <div class="tierGlass" id="bitsTier">
+                <h3>& Bits Tier 😋</h3>
+                <ul>
+                    <li>Hosting</li>
+                    <li>Up to 10 pages</li>
+                    <li>Copy writing</li>
+                    <li>Regular content<br>updates</li>
+                </ul>
+                <img src="" alt="Building website image">
+            </div>
+            <div class="tierGlass" id="pressedTier">
+                <h3>The Pressed Tier 🥇</h3>
+                <ul>
+                    <li>Email set-up</li>
+                    <li>Email signatures</li>
+                    <li>48 hour SLA</li>
+                    <li>Annual Revisions</li>
+                    <li>Unlimited pages</li>
+                </ul>
+                <img src="" alt="Building website image">
+            </div>
+        </div>
+        <div class="tierSelectWrapper">
+            <input class="tierSelect" type="radio" name="tierSelect" checked>
+            <input class="tierSelect" type="radio" name="tierSelect">
+            <input class="tierSelect" type="radio" name="tierSelect">
+        </div>
+    </div>
     <h2>Peep our work 👀</h2>
     <h3>Ring-Ring-Refresh</h3>
     <h4>Rewriting the <a href="">SMLT Ringers' website</a></h4>

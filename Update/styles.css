@@ -71,3 +71,100 @@ h1, h2, h3, h4, h5, h6, p, ul {
     color: white;
     padding: 10px
 }
+
+.logo {
+    text-shadow: #fa6a5489 .3em .3em;
+}
+
+.tierContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    -ms-overflow-style: none; /* Remove Scrollbar for MS browsers */
+    scrollbar-width: none; /* Remove Scrollbar for Firefox */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    height: 330px;
+}
+
+.tierContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.select {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #00000017;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.select:hover {
+    transform: scale(1.1);
+}
+
+.select:first-of-type {
+    transform: translate(-130px, 130px);
+}
+
+.select:last-of-type {
+    transform: translate(130px, 130px);
+}
+
+.tierGlass {
+    max-width: calc(100vw - 50px);
+    min-width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    scroll-snap-align: center;
+    position: absolute;
+    margin-left: auto;
+    list-style-position: inside;
+}
+
+.tierGlass h3 {
+    text-align: center;
+}
+
+#juiceTier {
+    background-color: rgba(255, 255, 25, .4);
+    display: block;
+}
+
+#bitsTier {
+    background-color: rgba(255, 123, 0, 0.4);
+    display: none;
+}
+
+#pressedTier {
+    background-color: rgba(255, 0, 0, 0.4);
+    display: none;
+}
+
+.tierSelectWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tierSelect {
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.621);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.tierSelect:checked {
+    width: 20px;
+    background-color: white;
+}
